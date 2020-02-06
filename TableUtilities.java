@@ -17,11 +17,11 @@ public class TableUtilities {
           for(int j = 1; j <= tableSize; j++){
             int pro = i*j;
             if(pro<10){
-              results += String.format("  %d |", pro);
+              results += String.format("%1$3d |", pro);
             }else if(pro<100){
-              results += String.format(" %d |", pro);
+              results += String.format("%1$3d |", pro);
             }else{
-              results += String.format("%d |", pro);
+              results += String.format("%1$3d |", pro);
             }
           }
           results += "\n";
