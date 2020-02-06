@@ -1,15 +1,31 @@
- 
+
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        return null;
+        String results = getMultiplicationTable(5);
+        return results;
     }
 
     public static String getLargeMultiplicationTable() {
-        return null;
+        String results = getMultiplicationTable(10);
+        return results;
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
+        String results = "";
+        for(int i = 1; i <= tableSize; i++){
+          for(int j = 1; j <= tableSize; j++){
+            int pro = i*j;
+            if(pro<10){
+              results += String.format("  %d |", pro);
+            }else if(pro<100){
+              results += String.format(" %d |", pro);
+            }else{
+              results += String.format("%d |", pro);
+            }
+          }
+          results += "\n";
+        }
+        return results;
     }
 }

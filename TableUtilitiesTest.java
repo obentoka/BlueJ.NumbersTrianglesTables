@@ -1,4 +1,4 @@
- 
+
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.junit.Test;
  * Created by leon on 1/31/18.
  */
 public class TableUtilitiesTest {
-   
+
     @Test
     public void testGetMulplicationTable_forOne(){
         String expected = "  1 |\n";
@@ -15,7 +15,7 @@ public class TableUtilitiesTest {
         String actual = TableUtilities.getMultiplicationTable(1);
         Assert.assertEquals(expected, actual);
     }
-    
+
         @Test
     public void testGetMulplicationTable_forTwo(){
         String expected = "  1 |  2 |\n" +
@@ -24,8 +24,8 @@ public class TableUtilitiesTest {
         String actual = TableUtilities.getMultiplicationTable(2);
         Assert.assertEquals(expected, actual);
     }
-    
-    
+
+
     @Test
     public void testGetLargeMultiplicationTable() {
         String expected =
